@@ -1395,9 +1395,6 @@ body {
 .fas fa-user
         {
             width: 80px;
-            
+            color: rgb(32, 69, 70);
         }
-        .sub-menu1
-        {
-          display: none;
-        }    
+          

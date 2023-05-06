@@ -1,3 +1,7 @@
+<?php
+include('connection.php');
+?>
+
 <!doctype html>
 <html lang="en">
 

@@ -74,7 +74,7 @@ $_SESSION['username'];
           <li class="navbar-item">
             <a href="index.php" class="navbar-link" data-nav-link>Logout</a></li>
           <li class="navbar-item">
-          <a href="#contact"class="navbar-link" style="font-size: 20px; margin-left:200px;">Welcome <?=$_SESSION['name'];?></a>
+          <a href="profile.php"class="navbar-link" style="font-size: 20px; margin-left:200px;">Welcome <?=$_SESSION['name'];?></a>
 </li>       
 </ul>
       </nav>
@@ -105,7 +105,7 @@ $_SESSION['username'];
                  
 
                   <h3 class="h3">
-                    <a href="website.php" class="card-title">Build Responsive Real- World Websites with HTML and CSS</a>
+                    <a href="website.php" class="card-title">Build Responsive Real- World Websites with HTML and CSS and JavaScript</a>
                   </h3>
 
                   <div class="wrapper">
@@ -438,6 +438,19 @@ $_SESSION['username'];
 
         </div>
       </section>
+
+      <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright" style="color:#000">
+          Copyright 2023 All Rights Reserved by <a href="#" class="copyright-link">Eduweb</a>
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
 
  </div>
 </body>

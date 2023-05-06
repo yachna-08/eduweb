@@ -60,7 +60,7 @@
 
         <div class="wrapper">
           <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" width="162" height="50" alt="EduWeb logo">
+            <img src="./assets/images/logo-light.svg" width="162" height="50" alt="EduWeb logo">
           </a>
 
           <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
@@ -73,19 +73,9 @@
           <li class="navbar-item">
             <a href="#home" class="navbar-link" data-nav-link>Home</a>
           </li>
-
           <li class="navbar-item">
             <a href="#about" class="navbar-link" data-nav-link>About</a>
           </li>
-
-          <li class="navbar-item">
-            <a href="#courses" class="navbar-link" data-nav-link>Courses</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-          </li>
-
           <li class="navbar-item">
             <a href="#" class="navbar-link" data-nav-link>Contact</a>
           </li>
@@ -101,7 +91,7 @@
         </button>
 
         <a href="login home.php" class="btn has-before">
-          <span class="span">Try for free</span>
+          <span class="span">Login</span>
 
           <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
         </a>
@@ -139,10 +129,10 @@
             </h1>
 
             <p class="hero-text">
-              Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit.
+           Eduweb classes are taught by industry leaders excited to share their tools, techniques, and professional journeys with you.
             </p>
 
-            <a href="#" class="btn has-before">
+            <a href="register.php" class="btn has-before">
               <span class="span">Find courses</span>
 
               <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -187,7 +177,7 @@
           </h2>
 
           <p class="section-text">
-            Consectetur adipiscing elit sed do eiusmod tempor.
+            Start your journey now!.
           </p>
 
           <ul class="grid-list">
@@ -203,11 +193,6 @@
                 <h3 class="h3">
                   <a href="#" class="card-title">Online Degree Programs</a>
                 </h3>
-
-                <p class="card-text">
-                  Lorem ipsum dolor consec tur elit adicing sed umod tempor.
-                </p>
-
                 <span class="card-badge">7 Courses</span>
 
               </div>
@@ -224,11 +209,6 @@
                 <h3 class="h3">
                   <a href="#" class="card-title">Non-Degree Programs</a>
                 </h3>
-
-                <p class="card-text">
-                  Lorem ipsum dolor consec tur elit adicing sed umod tempor.
-                </p>
-
                 <span class="card-badge">4 Courses</span>
 
               </div>
@@ -245,11 +225,6 @@
                 <h3 class="h3">
                   <a href="#" class="card-title">Off-Campus Programs</a>
                 </h3>
-
-                <p class="card-text">
-                  Lorem ipsum dolor consec tur elit adicing sed umod tempor.
-                </p>
-
                 <span class="card-badge">8 Courses</span>
 
               </div>
@@ -266,11 +241,6 @@
                 <h3 class="h3">
                   <a href="#" class="card-title">Hybrid Distance Programs</a>
                 </h3>
-
-                <p class="card-text">
-                  Lorem ipsum dolor consec tur elit adicing sed umod tempor.
-                </p>
-
                 <span class="card-badge">8 Courses</span>
 
               </div>
@@ -319,9 +289,7 @@
             </h2>
 
             <p class="section-text">
-              Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod ex tempor incididunt labore dolore magna
-              aliquaenim ad
-              minim.
+            Whether it's a first brush on canvas or the last frame in an animation, eduweb is here to support you on every step of your creative journey.
             </p>
 
             <ul class="about-list">
@@ -378,26 +346,23 @@
             <img src="./assets/images/logo-light.svg" width="162" height="50" alt="EduWeb logo">
           </a>
 
-          <p class="footer-brand-text">
-            Lorem ipsum dolor amet consecto adi pisicing elit sed eiusm tempor incidid unt labore dolore.
-          </p>
 
           <div class="wrapper">
             <span class="span">Add:</span>
 
-            <address class="address">70-80 Upper St Norwich NR2</address>
+            <address class="address">G-121, Street no-9 mohan baba nagar Badarpur, New Delhi - 110044</address>
           </div>
 
           <div class="wrapper">
             <span class="span">Call:</span>
 
-            <a href="tel:+011234567890" class="footer-link">+01 123 4567 890</a>
+            <a href="tel:+011234567890" class="footer-link">+91 9136169073</a>
           </div>
 
           <div class="wrapper">
             <span class="span">Email:</span>
 
-            <a href="mailto:info@eduweb.com" class="footer-link">info@eduweb.com</a>
+            <a href="mailto:info@eduweb.com" class="footer-link">yachnasharma1999@gmail.com</a>
           </div>
 
         </div>
@@ -457,7 +422,7 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">Sign In/Registration</a>
+            <a href="register.php" class="footer-link">Sign In/Registration</a>
           </li>
 
           <li>
@@ -527,7 +492,7 @@
       <div class="container">
 
         <p class="copyright">
-          Copyright 2022 All Rights Reserved by <a href="#" class="copyright-link">codewithsadee</a>
+          Copyright 2022 All Rights Reserved by <a href="#" class="copyright-link">Eduweb</a>
         </p>
 
       </div>

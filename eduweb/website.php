@@ -20,6 +20,10 @@ $_SESSION['username'];
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
     ></script>
+    <!-- fontawasome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
@@ -67,23 +71,17 @@ $_SESSION['username'];
 
         <ul class="navbar-list">
 
-          <li class="navbar-item">
+          <li class="navbar-item" style="font-size:15px;">
             <a href="#home" class="navbar-link" data-nav-link>Home</a>
           </li>
 
-          <li class="navbar-item">
-            <a href="#about" class="navbar-link" data-nav-link>Roadmap</a>
+          <li class="navbar-item" style="font-size:15px;">
+            <a href="#roadmap" class="navbar-link" data-nav-link>Roadmap</a>
           </li>
-
-          <li class="navbar-item">
-            <a href="course.php" class="navbar-link" data-nav-link>Courses</a>
+          <li class="navbar-item"style="font-size:15px;">
+          <a href="profile.php"class="navbar-link" style="font-size: 20px; margin-left:200px;">Welcome <?=$_SESSION['name'];?></a>
           </li>
-          <li class="navbar-item">
-          <a href="#contact"class="navbar-link" style="font-size: 20px; margin-left:200px;">Welcome <?=$_SESSION['name'];?></a>
-          </li>
-          <i class="fas fa-user" style="font-size: large; line-height: 3.5;"></i>
-
-          <li class="navbar-item">
+          <li class="navbar-item"style="font-size:15px;">
             <a href="index.php" class="navbar-link" data-nav-link>Logout</a>
           </li>
           
@@ -186,6 +184,80 @@ $_SESSION['username'];
 {
 	margin-left: 50%;
 }
+ul {
+    list-style: none;
+}
+  
+.accordion-menu {
+    max-width: 2050px;
+    margin: 100px auto 20px;
+    background: #242d41;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #000;
+    margin-top: -70px;
+}
+
+.accordion-menu li:last-child .dropdown{
+    border-bottom: 0;
+}
+.accordion-menu li.active .dropdown {
+    color: #fff;
+}
+.accordion-menu li.active .dropdown .fa-chevron-down {
+    transform: rotate(180deg);
+}
+.dropdown {
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 45px;
+    font-size: 18px;
+    border-bottom: 2px solid #2d374d;
+    color: #999999;
+    position: relative;
+    transition: all 0.4s ease-out;
+}
+
+.dropdown:hover{
+    background: #566f82; /* fallback colour */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#27455c), to(#273a47));
+}
+  
+.dropdown  i {
+    position: absolute;
+    top: 17px;
+    left: 16px;
+}
+
+.dropdown .fa-chevron-down {
+    right: 12px;
+    left: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.submenuItems {
+    display: none;
+    background: #2d374d;;
+    transition: all 2s ease-in-out;
+}
+
+.accordion-menu li.active .submenuItems{
+    display: block;
+}
+
+.submenuItems a {
+    display: block;
+    color: #66b2ff;
+    font-weight: 600;
+    padding: 12px 12px 12px 45px;
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+}
+
+.submenuItems a:hover {
+    background-color: #5c7185;
+    color: #fff;
+  }
 </style>
 <section class="section about" id="about" aria-label="about" style="margin-top: 150px;">
         <div class="container">
@@ -196,9 +268,9 @@ $_SESSION['username'];
               <img src="./assets/images/website.png" width="520" height="370" loading="lazy" alt="about banner"
                 class="img-cover">
             </div>
-            <img src="./assets/images/Enroll.png" width="371" height="220" loading="lazy" alt=""
+           <a href="websitecourse.php"> <img src="./assets/images/Enroll.png" width="371" height="220" loading="lazy" alt=""
               class="shape about-shape-2" style="margin-left: -400px;top:250px;">
-
+           </a>
             <img src="./assets/images/about-shape-3.png" width="722" height="528" loading="lazy" alt=""
               class="shape about-shape-3">
 
@@ -237,37 +309,142 @@ $_SESSION['username'];
 
                 <span class="span">Lifetime Access</span>
               </li>
-
             </ul>
-
             <img src="./assets/images/about-shape-4.svg" width="100" height="100" loading="lazy" alt=""
               class="shape about-shape-4">
-
           </div>
-
         </div>
       </section>
-      <section class="section course" id="courses" aria-label="course" style="background-color:hsl(170, 75%, 41%); margin-top:-400px;">
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left: 300px;">
-          Dropdown
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-          <button class="dropdown-item" type="button">Action</button>
-          <button class="dropdown-item" type="button">Another action</button>
-          <button class="dropdown-item" type="button">Something else here</button>
-        </div>
+            </div>
+      <section class="section course" id="roadmap" aria-label="roadmap" style="background-color:hsl(170, 75%, 41%); margin-top:-400px;">
+      <div class="container">
+        <ul class="accordion-menu">
+            <li class="link">
+                <div class="dropdown">
+                    <i class="fa-brands fa-python"></i> 
+                    HTML
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </div>
+                <ul class="submenuItems" style="font-size: 15px; color:#fff;">
+                  <li><a href="#">Html main level tags</a></li>
+                  <li><a href="#">Html sementic elements</a></li>
+                  <li><a href="#">List of other commonly used HTML tags</a></li>
+                  <li><a href="#">Table elements</a></li>
+                  <li><a href="#">Form elements</a></li>
+                  <li><a href="#">Multimedia tags</a></li>
+                  <li><a href="#">HTML global attributes on elements</a></li>
+                </ul> 
+            </li>
+            <li class="link">
+                <div class="dropdown">
+                    <i class="fa-brands fa-node-js"></i> 
+                    CSS
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </div>
+                <ul class="submenuItems" style="font-size: 15px;">
+                    <li><a href="#">What is css?</a></li>
+                    <li><a href="#">CSS Selectors</a></li>
+                    <li><a href="#">CSS Properties</a></li>
+                    <li><a href="#">Box model</a></li>
+                    <li><a href="#">Values & units</a></li>
+                    <li><a href="#">CSS Specificity & Inheritance</a></li>
+                    <li><a href="#">Display</a></li>
+                    <li><a href="#">Positioning</a></li>
+                    <li><a href="#">Static</a></li>
+                    <li><a href="#">Relative</a></li>
+                    <li><a href="#">Absolute</a></li>
+                    <li><a href="#">Fixed</a></li>
+                    <li><a href="#">Sticky</a></li>
+                </ul>
+            </li>
+            <li class="link">
+                <div class="dropdown">
+                    <i class="fa-brands fa-node-js"></i> 
+                  Advance CSS
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </div>
+                <ul class="submenuItems" style="font-size: 15px;">
+                    <li><a href="#">Shadows</a></li>
+                    <li><a href="#">Gradients</a></li>
+                    <li><a href="#">Transforms</a></li>
+                    <li><a href="#">Transitions</a></li>
+                    <li><a href="#">Animations</a></li>
+                    <li><a href="#">CSS Varisables</a></li>
+                    <li><a href="#">Media Query</a></li>
+                    <li><a href="#">Layouts</a></li>
+                </ul>
+            </li>
+            <li class="link">
+                <div class="dropdown">
+                    <i class="fa-brands fa-react"></i> 
+                    JavaScript
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </div>
+                <ul class="submenuItems" style="font-size: 15px;">
+                    <li><a href="#">Fundamental of JavaScript</a></li>
+                    <li><a href="#">Operators</a></li>
+                    <li><a href="#">Conditional and control flow statements</a></li>
+                    <li><a href="#">Arrays</a></li>
+                    <li><a href="#">Functions</a></li>
+                    <li><a href="#">Objects & prototypes</a></li>
+                    <li><a href="#">class</a></li>
+                </ul>
+            </li>
+            <li class="link">
+                <div class="dropdown">
+                    <i class="fa-brands fa-react"></i> 
+                    Advance JavaScript
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </div>
+                <ul class="submenuItems" style="font-size: 15px;">
+                    <li><a href="#">Iterators and Generators</a></li>
+                    <li><a href="#">Promises,Async and Await</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Error Handling</a></li>
+                    <li><a href="#">Modules</a></li>
+                    <li><a href="#">Proxy and Reflection</a></li>
+                    <li><a href="#">Dom</a></li>
+                </ul>
+            </li>
+            <li class="link">
+                <div class="dropdown">
+                    <i class="fa-brands fa-react"></i> 
+                    Project
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+      <section>
+        <div>
+</section>
+<div class="footer-bottom" >
+      <div class="container">
+
+        <p class="copyright" style="color:#000; font-size:15px; height:-50px;">
+          Copyright 2023 All Rights Reserved by <a href="#" class="copyright-link" style="color:#fff">Eduweb</a>
+        </p>
+
       </div>
-      </section>
+    </div>
 
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-      <script src="./assets/js/script.js" defer></script>
+  </footer>
 
-<!-- 
-  - ionicon link
--->
+<script>
+let listElements = document.querySelectorAll('.link');
+
+listElements.forEach(listElement => {
+    listElement.addEventListener('click', ()=>{
+        if (listElement.classList.contains('active')){
+            listElement.classList.remove('active');
+        }else{
+            listElements.forEach (listE => {
+                listE.classList.remove('active');
+            })
+            listElement.classList.toggle('active');
+        }
+    })
+});</script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

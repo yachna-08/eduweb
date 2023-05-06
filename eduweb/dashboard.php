@@ -51,7 +51,7 @@ $_SESSION['username'];
 <header class="header" data-header>
     <div class="container">
 
-      <a href="#" class="logo">
+      <a href="#" class="logo" style="margin-left: -200px;">
         <img src="./assets/images/logo.svg" width="162" height="50" alt="EduWeb logo">
       </a>
 
@@ -67,18 +67,14 @@ $_SESSION['username'];
           </button>
         </div>
 
-        <ul class="navbar-list">
+        <ul class="navbar-list" style="margin-left: 200px;">
 
           <li class="navbar-item">
             <a href="#home" class="navbar-link" data-nav-link>Home</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#about" class="navbar-link" data-nav-link>About</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="course.php" class="navbar-link" data-nav-link>Courses</a>
+            <a href="#courses" class="navbar-link" data-nav-link>Courses</a>
           </li>
 
           <li class="navbar-item">
@@ -87,7 +83,7 @@ $_SESSION['username'];
 
           
           <li class="navbar-item">
-          <a href="#contact"class="navbar-link" style="font-size: 20px; margin-left:200px;">Welcome <?=$_SESSION['name'];?></a>
+          <a href="profile.php"class="navbar-link" style="font-size: 20px; margin-left:200px;">Welcome <?=$_SESSION['name'];?></a>
           </li>
           <i class="fas fa-user" style="font-size: large; line-height: 3.5;"></i>
 
@@ -200,10 +196,10 @@ $_SESSION['username'];
     </style>
 	<div class="banner">
          <div class="app-text">
-             <h3>airbnb for yatchting</h3>
-             <h1>Manage<br>Adventures</h1>
-             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-
+             <h3>Welcome to Eduweb</h3>
+             <h1>Learning<br>Start</h1>
+             <p>If you have the courage and the commitment to learn coding, then EduWeb will empower you.
+NO MATTER WHAT IT TAKES! </p>
              <div class="btn-group">
                  <div class="signup-btn">Sign up now</div>
                  <div class="play-btn">
@@ -264,7 +260,7 @@ $_SESSION['username'];
 
                   </div>
 
-                  <data class="price" value="29">$29.00</data>
+                  <data class="price" value="29">FREE</data>
 
                   <ul class="card-meta-list">
 
@@ -323,7 +319,7 @@ $_SESSION['username'];
 
                   </div>
 
-                  <data class="price" value="49">$49.00</data>
+                  <data class="price" value="49">FREE</data>
 
                   <ul class="card-meta-list">
 
@@ -382,7 +378,7 @@ $_SESSION['username'];
 
                   </div>
 
-                  <data class="price" value="35">$35.00</data>
+                  <data class="price" value="35">FREE</data>
 
                   <ul class="card-meta-list">
 
@@ -407,7 +403,7 @@ $_SESSION['username'];
 
           </ul>
 
-          <a href="#" class="btn has-before">
+          <a href="course.php" class="btn has-before">
             <span class="span">Browse more courses</span>
 
             <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
