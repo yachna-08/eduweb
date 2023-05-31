@@ -278,16 +278,15 @@ ul {
 
           <div class="about-content" style="top:-500px;">
 
-            <p class="section-subtitle">About Us</p>
+            <p class="section-subtitle">Build Responsive Real- World Websites with HTML and CSS and JavaScript</p>
 
-            <h2 class="h2 section-title">
-              Over 10 Years in <span class="span">Distant learning</span> for Skill Development
+            <h2 class="h2 section-title"> 
+             <span class="span">When you learn web development, you might start out writing a simple page of HTML text and build up to creating more complex, 
+            </span> feature-rich applications designed to be accessed from various Internet-connected devices.
             </h2>
 
             <p class="section-text">
-              Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod ex tempor incididunt labore dolore magna
-              aliquaenim ad
-              minim.
+            start out writing a simple page of HTML text and build up to creating more complex
             </p>
 
             <ul class="about-list">

@@ -46,12 +46,11 @@ $_SESSION['username'];
 
 
 </head>
-
 <body>
 <header class="header" data-header>
     <div class="container">
 
-      <a href="#" class="logo" style="margin-left: -200px;">
+      <a href="#" class="logo" style="margin-left: -701px;">
         <img src="./assets/images/logo.svg" width="162" height="50" alt="EduWeb logo">
       </a>
 
@@ -67,7 +66,7 @@ $_SESSION['username'];
           </button>
         </div>
 
-        <ul class="navbar-list" style="margin-left: 200px;">
+        <ul class="navbar-list" style="margin-left: -447px;">
 
           <li class="navbar-item">
             <a href="#home" class="navbar-link" data-nav-link>Home</a>

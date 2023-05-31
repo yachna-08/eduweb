@@ -3,7 +3,7 @@
  /* Created by E-siksha @ www.e-siksha.in */
 // Run the connection here
 
- $dbc = mysqli_connect('localhost', 'root', '', 'todo');
+ $dbc = mysqli_connect('localhost', 'root', '', 'login_register_db');
 
 
 $todo_id = '';

@@ -1,5 +1,5 @@
 <?php 
- $dbc = mysqli_connect('localhost', 'root', '', 'todo');
+ $dbc = mysqli_connect('localhost', 'root', '', 'login_register_db');
 
 $todo_id = $_GET['id'];
 

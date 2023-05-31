@@ -88,34 +88,17 @@ $_SESSION['username'];
                     <div class="box box1">
                     <ion-icon name="desktop-outline"></ion-icon>
                         <span class="text">Enrolled courses</span>
-                        <span class="number">112,567</span>
+                        <span class="number">1</span>
                     </div>
                     <div class="box box2">
                     <ion-icon name="analytics-outline"></ion-icon>
                         <span class="text">Completed sections</span>
-                        <span class="number">112,567</span>
+                        <span class="number">3</span>
                     </div>
                     <div class="box box3">
                     <ion-icon name="timer-outline"></ion-icon>
                         <span class="text">Spent time</span>
-                        <span class="number">112,567</span>
-                    </div>
-                </div>
-            </div>
-            <div class="activity">
-                <div class="title">
-                    <ion-icon name="time-outline"></ion-icon>
-                    <span class="text">Recent Members</span>
-                </div>
-                <div class="activity-data">
-                    <div class="data names">
-                        <span class="data-title">Name</span>
-                    </div>
-                    <div class="data email">
-                        <span class="data-title">Email</span>
-                    </div>
-                    <div class="data joined">
-                        <span class="data-title">Joined</span>
+                        <span class="number">2 hr</span>
                     </div>
                 </div>
             </div>
